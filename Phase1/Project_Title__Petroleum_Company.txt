@@ -1,0 +1,161 @@
+Project Title : Petroleum Company System
+
+
+Project Discription :    // I suggest re writing the discription adding more word and making it more discriptive 
+	
+	Aim: increasing the efficiancy of operation in the company
+
+	This system will be used for time scheduling and task distribution and operation management.
+	This system will not be fully involved in the production process.
+
+
+Actors:
+
+	Emplyess:
+		Eng
+		Workers
+		Lab Technicians
+		Hr 
+		Security 
+		Lawyer
+		Accountant
+
+	Departments:
+		Time Control Management Department
+		Production Department
+		Financial Department 
+		Industry Development Department
+		HR Department
+		Department of Legal Affairs
+		Maintenance Department
+		Laboratory Department
+		Recycling Department
+		Insurance Department
+		Transportation Department
+
+	External Actors:
+		Recruitment Agencies
+		Specialized Tool Companys
+		Insurance Companys
+		Transportation Companys
+
+
+Business Applications:   //Im not sure if these are valid Business Applications or not but I took the customer requirements that we wrote for the SEng Proj and removed the ones that I didnt feel were Business Applications
+
+	1 - Managing insurance
+	2 - Managing tool requests by Eng
+	3 - Managing shift distribution 
+	4 - Managing The salaries of all employees
+	5 - Managing Employee requests
+	6 - Managing Task Distribution
+	7 - Determining workplace of employees
+	8 - Managing hiaring requests 
+	9 - Managing maintanace request 
+	10- Classification of produced waste
+	11- Managing wastes recycling
+	12- Managing lab requests     
+	13- Managing employee promotions
+	14- Managing employee transportaion
+	15- Managing work teams
+	16- Comparing production with prediction 
+	17- Managing company Finance            
+	18- Monitoring Work entry and departure times for employees
+
+
+Business Rules:
+
+	Dependants have (Name, Related Employee ID)
+	
+	Work Sites must have (Location ID, Address,Department name)
+	Labs must have (Lab ID, Location)
+
+	Contracts have (Contract ID, Contract Date, ContractPDF)
+	Maintenance Requests have (Request ID, Request Date, location, Defect)
+
+	All Employees must have (name, address, birth date, contact information, SSN, hire date, salary, gender, age, Dep_number)
+	
+          
+	Engs, Workers, Lab Technicians, Hr Employees, Security Employees, Lawyers, Accountants are Employees
+
+	An Eng can Deploy many workers under him
+	Many Workers can be deployed under one Eng
+	An Eng may be responsible for a Work site  
+
+	A Worker Can Work In Many Work Sites 	
+	A Work Site Can Have Many Workers                                                                                                     
+		
+	A Lab Technicians May Works in Many Labs
+	A Lab Has Many Lab Technicians
+	A Lab Technician May Manage only one Lab 
+	A Lab can only be managed by one Lab Technician
+
+	A Security Employee must be assigned to a location
+
+	A HR Employee can Hire many Employees
+	An Employee is Hired By a HR Employee
+
+	A Department can Request A Lawyers Suggestion
+	A Lawyer can Review Many Contracts
+	A Contract can be Reviewed by Many Lawyers
+	A Lawyer can Write Many Contracts 
+	A contract can be Written by only one Lawyer 
+	 
+
+	An Accountant Assigns many Employees salaries
+	An Employees salarie is set by an Accountant
+
+
+	All Departments have (Dep_number, Dep_name, Dep_locations, Dep_manager ,Dep_number_of_employees)   
+	
+	An Employee can Send Many Maintenance Requests to the Maintenance Department
+	The Maintenance Department can recieve many Maintenance Requests from the Employees
+
+	All External Companies have (Company Name, Company Number, Company Email)
+
+	Recruitment Agencies, Specialized Tool Companys, Insurance Companys, Transportation Companys are All External Companies
+
+	A Department Can Send a Request to a External Company Each request has An ID and an Attached PDF of the request
+
+
+	Employess can Have Dependents Under their insurance plan
+	All Employess belong to a department				
+	One Employee manages only one department, each department can only be managed by one employee	
+	One Eng can Assign many Workers a task
+	Many Engineers can make may tool request to the Industry Development Department
+	Departments can contact each other
+	Departments can promote Employess under them 
+	
+
+
+
+Potential Queries:
+	
+	Which Employees have a salary above (Set amount)
+	Which Employees Work at (Set Location)
+
+      Which employees work in department number (enter department number)
+	Which Employees have an age above (enter number)
+	Who is the manager of department (enter department number)
+	What are the insurance companies we are collaberating with 
+	What are the transportation companies we are collaberating with
+
+	Which Employees are under (Set Department)
+	Were there any Maintenance requests during (Set Date)
+	Which Employees were Promoted during (Set Date)
+	Which Employees were Demoted during (Set Date)
+	Who were the Employees Who took Bonuses and what was the ammount they took
+	Who were the Employees who took a Bonus higher than (set ammount)
+	Who were the Employees who took a Bonus less than (set ammount)
+	Which Employees have Dependants
+	Which Employess have more than (set ammount) Dependants
+	Which Employess have less than (set ammount) Dependants
+	Who are the Dependants of (set Employee) 
+
+
+
+
+
+// If u feal like i understood something incorrectly then u could change them to how u like it 
+
+	
+	
